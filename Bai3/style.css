@@ -373,24 +373,21 @@ nav a:hover {
     border-radius: 2px;
 }
 
-/* Wrapper chứa thông tin liên hệ và form */
 .contact-wrapper {
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Chia 2 cột: info nhỏ, form lớn */
+    grid-template-columns: 1fr 2fr;
     gap: 60px;
-    align-items: start; /* Căn trên cùng */
+    align-items: start;
 }
 
-/* Box chứa thông tin liên hệ */
 .contact-info {
     background: var(--white);
     padding: 40px;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
-    height: fit-content; /* Chiều cao vừa đủ nội dung */
+    height: fit-content;
 }
 
-/* Tiêu đề thông tin liên hệ */
 .contact-info h3 {
     font-size: 1.5rem;
     font-weight: 600;
@@ -398,21 +395,18 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
-/* Từng item thông tin (địa chỉ, phone, email...) */
 .info-item {
     display: flex;
-    align-items: flex-start; /* Căn trên cùng */
+    align-items: flex-start;
     gap: 15px;
     margin-bottom: 25px;
 }
 
-/* Icon trong info item */
 .info-item .icon {
     font-size: 1.5rem;
-    margin-top: 5px; /* Canh với text */
+    margin-top: 5px;
 }
 
-/* Tiêu đề nhỏ của info item */
 .info-item h4 {
     font-weight: 600;
     color: var(--text-color);
@@ -420,14 +414,12 @@ nav a:hover {
     font-size: 1.1rem;
 }
 
-/* Nội dung info item */
 .info-item p {
     color: var(--light-text);
     margin: 0;
     line-height: 1.4;
 }
 
-/* Wrapper chứa form liên hệ */
 .contact-form-wrapper {
     background: var(--white);
     padding: 40px;
@@ -435,19 +427,16 @@ nav a:hover {
     box-shadow: var(--shadow);
 }
 
-/* Hàng form có 2 cột */
 .form-row {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Chia đôi */
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-/* Nhóm form (label + input) */
 .form-group {
     margin-bottom: 25px;
 }
 
-/* Label của form */
 .form-group label {
     display: block;
     margin-bottom: 8px;
@@ -456,91 +445,79 @@ nav a:hover {
     font-size: 0.95rem;
 }
 
-/* Input fields: text, email, select, textarea */
 .form-group input,
 .form-group textarea,
 .form-group select {
     width: 100%;
     padding: 15px;
-    border: 2px solid #e5e7eb; /* Border xám nhẹ */
+    border: 2px solid #e5e7eb;
     border-radius: var(--border-radius);
     font-size: 1rem;
     transition: var(--transition);
-    font-family: inherit; /* Kế thừa font từ parent */
+    font-family: inherit;
     background: var(--white);
 }
 
-/* Trạng thái focus của input */
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus {
-    outline: none; /* Bỏ outline mặc định */
-    border-color: var(--primary-color); /* Đổi màu border thành xanh biển */
-    box-shadow: 0 0 0 3px rgba(30, 60, 114, 0.1); /* Thêm glow effect */
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
-/* Textarea có thể resize theo chiều dọc */
 .form-group textarea {
-    resize: vertical; /* Chỉ cho phép kéo theo chiều dọc */
-    min-height: 120px; /* Chiều cao tối thiểu */
+    resize: vertical;
+    min-height: 120px;
 }
 
-/* Nút submit form */
 .submit-btn {
     width: 100%;
     padding: 15px 30px;
-    /* Gradient xanh biển cho nút */
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     color: var(--white);
     border: none;
     border-radius: var(--border-radius);
     font-size: 1.1rem;
     font-weight: 600;
-    cursor: pointer; /* Con trỏ chuột thành tay */
+    cursor: pointer;
     transition: var(--transition);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Khoảng cách giữa text và icon */
-    text-transform: uppercase; /* Chữ in hoa */
-    letter-spacing: 0.5px; /* Tăng khoảng cách chữ */
+    gap: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-/* Hiệu ứng hover cho nút submit */
 .submit-btn:hover {
-    transform: translateY(-2px); /* Nâng lên */
-    box-shadow: var(--shadow-lg); /* Tăng đổ bóng */
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
 }
 
-/* Icon trong nút */
 .btn-icon {
     transition: var(--transition);
 }
 
-/* Icon di chuyển khi hover */
 .submit-btn:hover .btn-icon {
-    transform: translateX(5px); /* Di chuyển sang phải */
+    transform: translateX(5px);
 }
 
 
-/* === FOOTER === */
-
-/* Footer với gradient xanh biển đậm */
+/* --- Footer --- */
 footer {
-    background: linear-gradient(135deg, var(--primary-color) 0%, #1a365d 100%);
+    background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
     color: var(--white);
     padding: 60px 0 20px;
 }
 
-/* Grid chứa các section của footer */
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
     margin-bottom: 40px;
 }
 
-/* Tiêu đề các section footer */
 .footer-section h3 {
     font-size: 1.3rem;
     font-weight: 600;
@@ -548,111 +525,97 @@ footer {
     color: var(--white);
 }
 
-/* Paragraph trong footer */
 .footer-section p {
-    color: #d1d5db; /* Màu xám nhạt */
+    color: #d1d5db;
     line-height: 1.6;
     margin-bottom: 15px;
 }
 
-/* List trong footer */
 .footer-section ul {
-    list-style: none; /* Bỏ dấu chấm */
+    list-style: none;
 }
 
 .footer-section ul li {
     margin-bottom: 10px;
 }
 
-/* Link trong footer */
 .footer-section ul li a {
     color: #d1d5db;
-    text-decoration: none; /* Bỏ gạch chân */
+    text-decoration: none;
     transition: var(--transition);
 }
 
-/* Hiệu ứng hover cho link footer */
 .footer-section ul li a:hover {
-    color: var(--accent-color); /* Đổi thành màu xanh cyan */
-    transform: translateX(5px); /* Di chuyển sang phải nhẹ */
+    color: var(--accent-color);
+    transform: translateX(5px);
 }
 
-/* Container chứa social links */
 .social-links {
     display: flex;
     gap: 15px;
     margin-top: 20px;
 }
 
-/* Từng social link */
 .social-links a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45px;
-    height: 45px;
-    background: rgba(255, 255, 255, 0.1); /* Nền trong suốt */
-    border-radius: 50%; /* Tạo hình tròn */
     font-size: 1.2rem;
     text-decoration: none;
     transition: var(--transition);
 }
 
-/* Hiệu ứng hover cho social links */
 .social-links a:hover {
-    background: var(--accent-color); /* Đổi nền thành xanh cyan */
-    transform: translateY(-3px); /* Nâng lên */
+    background: var(--primary-color);
+    transform: translateY(-3px);
 }
 
-/* Phần bottom của footer */
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Border trong suốt */
+    border-top: 1px solid #374151;
     padding-top: 20px;
     text-align: center;
 }
 
 .footer-bottom p {
-    color: #9ca3af; /* Màu xám nhạt hơn */
+    color: #9ca3af;
     margin: 0;
 }
 
-/* === RESPONSIVE DESIGN === */
-
-/* Tablet lớn (1024px trở xuống) */
+/* --- Responsive Design --- */
 @media (max-width: 1024px) {
     .container {
-        padding: 0 15px; /* Giảm padding hai bên */
+        padding: 0 15px;
     }
     
     .hero-content h2 {
-        font-size: 2.5rem; /* Giảm size font */
+        font-size: 2.5rem;
     }
     
-    /* Contact chuyển từ 2 cột thành 1 cột */
     .contact-wrapper {
         grid-template-columns: 1fr;
         gap: 40px;
     }
 }
 
-/* Tablet (768px trở xuống) */
 @media (max-width: 768px) {
-    /* Header responsive */
     .header-content h1 {
-        font-size: 2rem; /* Giảm size logo */
+        font-size: 2rem;
     }
     
-    /* Menu responsive */
     nav ul {
-        gap: 5px; /* Giảm khoảng cách menu */
+        gap: 5px;
     }
     
     nav a {
-        padding: 10px 15px; /* Giảm padding menu */
+        padding: 10px 15px;
         font-size: 0.9rem;
     }
     
-    /* Hero responsive */
     .hero-content h2 {
         font-size: 2rem;
     }
@@ -661,140 +624,107 @@ footer {
         font-size: 1rem;
     }
     
-    /* Stats grid responsive */
     .hero-stats {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 20px;
     }
     
-    /* Products thành 1 cột */
     .products-container {
         grid-template-columns: 1fr;
         gap: 30px;
     }
     
-    /* Form row thành 1 cột */
     .form-row {
         grid-template-columns: 1fr;
         gap: 0;
     }
     
-    /* Giảm padding cho mobile */
     .contact-info,
     .contact-form-wrapper {
         padding: 25px;
     }
 }
 
-/* Mobile (480px trở xuống) */
 @media (max-width: 480px) {
-    /* Menu chuyển thành dọc */
     nav ul {
         flex-direction: column;
         gap: 10px;
     }
     
-    /* Giảm padding sections */
     .hero-section {
         padding: 50px 0;
     }
     
     .hero-content h2 {
-        font-size: 1.8rem; /* Font nhỏ hơn cho mobile */
+        font-size: 1.8rem;
     }
     
     #product-list,
     #contact-form {
-        padding: 50px 0; /* Giảm padding */
+        padding: 50px 0;
     }
     
-    /* Stats thành 1 cột */
     .hero-stats {
         grid-template-columns: 1fr;
     }
     
-    /* Products 1 cột */
     .products-container {
         grid-template-columns: 1fr;
     }
     
-    /* Thêm margin cho product items */
     .product-item {
         margin: 0 10px;
     }
 }
 
-/* === ANIMATION UTILITIES === */
+/* === PHẦN THÊM MỚI CHO BÀI 3 === */
 
-/* Animation fade in từ dưới lên */
-@keyframes fadeInUp {
-    from {
-        opacity: 0; /* Bắt đầu trong suốt */
-        transform: translateY(30px); /* Bắt đầu từ dưới */
-    }
-    to {
-        opacity: 1; /* Kết thúc hiển thị */
-        transform: translateY(0); /* Kết thúc ở vị trí gốc */
-    }
+/* --- Khu vực điều khiển (Tìm kiếm & Nút thêm) --- */
+.controls-container {
+    text-align: center; /* Căn giữa các phần tử */
+    margin-bottom: 50px; /* Tăng khoảng cách với danh sách sản phẩm */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Cho phép xuống dòng trên màn hình nhỏ */
 }
 
-/* Class để áp dụng animation fade in up */
-.fade-in-up {
-    animation: fadeInUp 0.6s ease-out;
+#searchInput {
+    padding: 12px 20px;
+    width: 400px;
+    max-width: 100%;
+    border-radius: 25px; /* Bo tròn giống thanh menu */
+    border: 2px solid #e5e7eb;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
 }
 
-/* === LOADING ANIMATION === */
-
-/* Icon loading spinner */
-.loading {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 3px solid rgba(255, 255, 255, 0.3); /* Border trong suốt */
-    border-radius: 50%; /* Tạo hình tròn */
-    border-top-color: var(--white); /* Top border màu trắng */
-    animation: spin 1s ease-in-out infinite; /* Animation quay liên tục */
+#searchInput:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
-/* Keyframe cho animation quay */
-@keyframes spin {
-    to { 
-        transform: rotate(360deg); /* Quay 360 độ */
-    }
+.control-btn {
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap; /* Ngăn nút bị xuống dòng chữ */
 }
 
-/* === UTILITIES === */
-
-/* Class để ẩn element trên mobile */
-@media (max-width: 768px) {
-    .hide-mobile {
-        display: none !important;
-    }
+.control-btn:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
 }
 
-/* Class để chỉ hiển thị trên mobile */
-@media (min-width: 769px) {
-    .show-mobile {
-        display: none !important;
-    }
-}
-
-/* Class để căn giữa text */
-.text-center {
-    text-align: center;
-}
-
-/* Class để làm text bold */
-.text-bold {
-    font-weight: 700;
-}
-
-/* Class cho màu text primary */
-.text-primary {
-    color: var(--primary-color);
-}
-
-/* Class cho màu text accent */
-.text-accent {
-    color: var(--accent-color);
+/* --- Class để ẩn/hiện form --- */
+.hidden {
+    display: none; /* Thuộc tính quan trọng để ẩn phần tử */
 }

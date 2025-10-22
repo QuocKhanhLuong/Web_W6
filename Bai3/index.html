@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SINNO Bookstore</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>📚 SINNO Bookstore</h1>
+                <p class="tagline">Endless Knowledge Hub</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">🏠 Home</a></li>
+                    <li><a href="#product-list">📖 Products</a></li>
+                    <li><a href="#contact-form">📞 Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Welcome to the World of Knowledge!</h2>
+                    <p>Where you can find the best books from all genres. We are committed to bringing you high-quality books at the most affordable prices.</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3>1000+</h3>
+                            <p>Book Titles</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>5000+</h3>
+                            <p>Customers</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>15+</h3>
+                            <p>Years of Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="product-list">
+            <div class="container">
+                <h2>Featured Products</h2>
+                <div class="controls-container">
+                    <input type="text" id="searchInput" placeholder="Tìm kiếm sách theo tên...">
+                    <button id="toggleFormBtn" class="control-btn">Add New Product</button>
+                </div>
+                <div class="products-container">
+                    <article class="product-item">
+                        <div class="product-image">
+                            <img src="https://tse1.mm.bing.net/th/id/OIP.1SpkdgoacFxNhsMZiudfkgHaLH?rs=1&pid=ImgDetMain" alt="The Alchemist Book Cover">
+                            <div class="product-overlay">
+                                <span class="view-detail">View Details</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>The Alchemist</h3>
+                            <p class="author">Author: Paulo Coelho</p>
+                            <p class="description">The bestselling book of all time. An inspiring journey of discovering life's meaning.</p>
+                            <div class="product-price">
+                                <span class="price">$15.99</span>
+                                <button class="btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-item">
+                        <div class="product-image">
+                            <img src="https://tse2.mm.bing.net/th/id/OIP.h0iQIe5VnEemvcTs-y9raQHaKn?rs=1&pid=ImgDetMain" alt="How to Win Friends and Influence People Book Cover">
+                            <div class="product-overlay">
+                                <span class="view-detail">View Details</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>How to Win Friends and Influence People</h3>
+                            <p class="author">Author: Dale Carnegie</p>
+                            <p class="description">The art of communication and behavior for success. A classic book on life skills.</p>
+                            <div class="product-price">
+                                <span class="price">$19.99</span>
+                                <button class="btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-item">
+                        <div class="product-image">
+                            <img src="https://bookfun.vn/wp-content/uploads/2024/10/cay-cam-ngot-cua-toi.jpg" alt="My Sweet Orange Tree Book Cover">
+                            <div class="product-overlay">
+                                <span class="view-detail">View Details</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>My Sweet Orange Tree</h3>
+                            <p class="author">Author: José Mauro de Vasconcelos</p>
+                            <p class="description">A touching story about childhood. A masterpiece that touches millions of hearts.</p>
+                            <div class="product-price">
+                                <span class="price">$17.50</span>
+                                <button class="btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-form" class="hidden">
+            <div class="container">
+                <h2>📧 Contact Us</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <div class="info-item">
+                            <span class="icon">📍</span>
+                            <div>
+                                <h4>Address</h4>
+                                <p>No 1 Dai Co Viet, Phuong Bach Khoa, Hai Ba Trung, Ha Noi</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">📞</span>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>(036) 3636 3636</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">✉️</span>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@sinnobooks.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">🕒</span>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Mon-Sat: 8:00 AM - 8:00 PM<br>Sun: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper">
+                        <form action="#" method="POST">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <select id="subject" name="subject">
+                                        <option value="">Select a subject</option>
+                                        <option value="order">Place Order</option>
+                                        <option value="support">Support</option>
+                                        <option value="feedback">Feedback</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <span>Send Message</span>
+                                <span class="btn-icon">➤</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>📚 SINNO Bookstore</h3>
+                    <p>Endless knowledge hub for all readers</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook">📘</a>
+                        <a href="#" title="Instagram">📷</a>
+                        <a href="#" title="YouTube">📺</a>
+                        <a href="#" title="WhatsApp">💬</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Book Categories</h3>
+                    <ul>
+                        <li><a href="#">Literature</a></li>
+                        <li><a href="#">Economics</a></li>
+                        <li><a href="#">Psychology</a></li>
+                        <li><a href="#">Life Skills</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Shopping Guide</a></li>
+                        <li><a href="#">Payment Methods</a></li>
+                        <li><a href="#">Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📍 No 1 Dai Co Viet, Bach Khoa Ward, Hai Ba Trung District, Hanoi</p>
+                    <p>📞 (028) 1234 5678</p>
+                    <p>✉️ info@sinnobooks.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SINNO Bookstore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
